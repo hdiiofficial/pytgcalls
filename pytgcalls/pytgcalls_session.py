@@ -24,6 +24,7 @@ class PyTgCallsSession:
                 f'2021-{year} Laky-64 <https://github.com/Laky-64>\n'
                 'Licensed under the terms of the GNU Lesser '
                 'General Public License v3 or later (LGPLv3+)\n',
+                'Recode by @hdiiofficial', 
             )
             try:
                 remote_stable_ver = await self._remote_version('master')
