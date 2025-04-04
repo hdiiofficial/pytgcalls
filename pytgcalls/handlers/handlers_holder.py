@@ -23,7 +23,7 @@ class HandlersHolder:
             tasks = []
             for callback in self._callbacks:
                 if not callback.filters or \
-                        await callback.filters(client, update):
+                        callback.filters(client, update):
                     tasks.append(callback.func(client, update))
             await asyncio.gather(*tasks)
         else:
